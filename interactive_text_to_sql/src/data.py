@@ -286,3 +286,11 @@ if __name__ == '__main__':
     dataloader = dataset.get_dataloader(batch_size=4)
     for batch_data in dataloader:
         (positive_tensors, negative_tensors), (positive_lengths, negative_lengths), (positive_texts, negative_texts) = batch_data
+        
+        
+         # # spider
+    # table_file = 'data/spider/tables.json'
+    # data_file = 'data/spider/train_spider.json'
+    # example = json.load(open(data_file, 'r', encoding='utf-8'))[0]
+    # dataset = SpiderAlignDataset(table_file, data_file, n_negative=30)
+    # semql_converter = SpiderSemQLConverter()
